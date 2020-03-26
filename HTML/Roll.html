@@ -1,0 +1,96 @@
+<!DOCtype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<LINK href="preferred_style.css" title="Job Listings" rel="stylesheet" type="text/css">
+   <LINK href="alternate_style.css" title="Job Listings" rel="alternate stylesheet" type="text/css">
+   <LINK href="persist_style.css" rel="stylesheet" type="text/css">
+  <title>Job Hunt Calc</title>
+
+
+
+<style>
+.topnav {
+   background-color: maroon;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 30px;
+}
+
+.topnav a:hover {
+   background-color: white;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: maroon;
+   color: white;
+}
+</style>
+
+</head>
+
+<body>
+<div class="header">
+<h1 id="title" onmouseover="hover()" onmouseout="normal()">Job Hunting Calculator</h1>
+</div>
+
+
+
+<div class="topnav">
+     <a href="index.html">Home</a>
+     <a href="about.html">About Us</a>
+     <a href="jobs.html">Jobs</a>
+     <a href="contact1.html">Contact Us</a>
+     <a href="roll.html">Time Job Hunting</a>
+     <a href="feedback.html">Feedback</a>
+ 
+</div>
+
+
+  <h4>How Long Have You Been Job-Hunting?</h4>
+  <form name="roll" action="https://web2.jhuep.com/~ctoren1/cgi-bin/Untitled.cgi" method=GET>
+    
+    <table>
+      <tr>
+        <td>Months:</td>
+        <td>
+          <input name=Months size=6>
+        </td>
+      </tr>
+      <tr>
+        <td>Weeks:</td>
+        <td>
+          <input name=Weeks size=6>
+        </td>
+      </tr>
+      <tr>
+        <td>Days:</td>
+        <td>
+          <input name=Days size=6>
+        </td>
+      </tr>
+      <tr>
+        <td>Hours:</td>
+        <td>
+          <input name=Hours size=6>
+        </td>
+      </tr>
+    </table>
+    <P>
+      <input type=submit value=Calculate>
+      <input type=reset value=Reset>
+    </P>
+  </FORM>
+   <script src="js/cookies.js"></script>
+</body>
+
+</html>

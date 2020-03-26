@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+   <LINK href="preferred_style.css" title="Job Listings" rel="stylesheet" type="text/css">
+   <LINK href="alternate_style.css" title="Job Listings" rel="alternate stylesheet" type="text/css">
+   <LINK href="persist_style.css" rel="stylesheet" type="text/css">
+ 
+<script type="text/javascript">
+
+
+
+function validation() {
+     var x = document.forms["contact1"]["firstname"].value;
+     if (x == "") {
+         alert("Please fill in first name");
+         return false;
+}
+}
+</script>
+
+
+  
+<style>
+.topnav {
+   background-color: maroon;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 30px;
+}
+
+.topnav a:hover {
+   background-color: white;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: maroon;
+   color: white;
+}
+</style>
+
+
+</head>
+
+<body>
+<div class="header">
+<h1 id="title" onmouseover="hover()" onmouseout="normal()">Contact Us</h1>
+</div>
+
+<div class="topnav">
+     <a href="index.html">Home</a>
+     <a href="about.html">About Us</a>
+     <a href="jobs.html">Jobs</a>
+     <a href="contact.html">Contact Us</a>
+     <a href="roll.html">Time Job Hunting</a>
+     <a href="feedback.html">Feedback</a>
+ 
+</div>
+
+
+<h2>Fill in the form to send us a note!</h2>
+
+<form method="POST" name="contact1" action="https://web2.jhuep.com/~ctoren1/WSD/results.php" onsubmit="return validation();">
+
+
+  First Name: <input type="text" name="firstname">
+  <br>
+  Last Name:<br>
+  <input type="text" name="lastname">
+  <br>
+  Email:<br>
+  <input type="text" name="email">
+  <br>
+  Phone Number:<br>
+  <input type="text" name="phonenumber">
+  <br>
+  <input type="radio" name="numtype" value="cell" checked> Cell<br>
+  <input type="radio" name="numtype" value="home" checked> Home<br>
+  I am a:<br>
+  <input type="radio" name="person" value="job seeker" checked> Job Seeker<br>
+  <input type="radio" name="person" value="employer" checked> Employer<br>
+  <br> Employment info:<br>
+  <select name="employment" size="7" multiple>
+  <option value="self-employed">Self-Employed</option>
+  <option value="full-time">Full-Time</option>
+  <option value="part-time">Part-Time</option>
+  <option value="temporary">Temporary</option>
+  <option value="intern">Intern</option>
+  <option value="student">Student</option>
+  <option value="unemployed">Unemployed</option>
+  </select>
+  <br>
+  Location:<br>
+  <input type="radio" name="city" value="los angeles" checked> Los Angeles<br>
+  <input type="radio" name="city" value="other" checked> Other<br>
+  <br>
+  If other, please specify location:<br>
+  <input type="text" name="location">
+  <br>
+  Message:<br>
+  <textarea name="message" rows="8" cols="40">
+  Write your message here
+  </textarea>
+  <br>
+
+
+  <input type="submit" value="Submit" id="submit">
+  </form>
+
+
+<p><a href="index.html">Back to homepage</a>
+   
+</body>
+</html>

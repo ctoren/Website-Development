@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+   <LINK href="preferred_style.css" title="Job Listings" rel="stylesheet" type="text/css">
+   <LINK href="alternate_style.css" title="Job Listings" rel="alternate stylesheet" type="text/css">
+   <LINK href="persist_style.css" rel="stylesheet" type="text/css">
+<title>"Job Listings"</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+.topnav {
+   background-color: maroon;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 30px;
+}
+
+.topnav a:hover {
+   background-color: white;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: maroon;
+   color: white;
+}
+.alert-box {
+	padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;  
+}
+
+.feedback {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    display: none;
+}
+
+.motive {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    display: none;
+}
+
+</style>
+</head>
+
+
+<body>
+<div class="header">
+<h1 id="title" onmouseover="hover()" onmouseout="normal()">Job Listings</h1>
+</div>
+
+<div class="topnav">
+     <a href="index.html">Home</a>
+     <a href="about.html">About Us</a>
+     <a href="jobs.html">Jobs</a>
+     <a href="contact1.html">Contact Us</a>
+     <a href="roll.html">Time Job Hunting</a>
+     <a href="feedback.html">Feedback</a>
+ 
+</div>
+
+<p>
+    <button id="feedback-btn">Click Me</button>
+    <button id="motive-btn">Motivation</button>
+    
+</p>
+<div class="alert-box feedback">Don't forget to leave feedback!</div>
+<div class="alert-box motive">You can do it!</div>
+
+<script>            //Script from Sunny Mody from JSFiddle 
+$( "#feedback-btn" ).click(function() {
+  $( "div.feedback" ).fadeIn( 300 ).delay( 1500 ).fadeOut( 400 );
+});
+
+$( "#motive-btn" ).click(function() {
+  $( "div.motive" ).fadeIn( 300 ).delay( 1500 ).fadeOut( 400 );
+});
+
+</script>
+
+<p>1. Producer Job
+	"A Nationally Syndicated news magazine show is looking for a Producer responsible for curating a variety of news related segments as assigned by Executive Producer. A college degree is required and producing and/or newsroom experience is preferred. Email resumes to tvproducer2019@gmail.com". Must have:</p>
+	<ul>
+	  <li>Strong communication skills.</li>
+	  <li>Demonstrate the ability to think clearly and quickly under pressure.</li> 
+	  <li>Great attention to detail.</li> 
+	  <li>A creative mind.</li>
+	  <li>Strong leadership and relationship building skills.</li>
+	</ul> 
+
+
+
+   <p>2. Business Affairs:"A-List global film finance and production company looking for a candidate to run in-house Business Affairs. Must have experience with international contracts. Position is based in Los Angeles. Please send resumes to jobsbmla@gmail.com with subject heading 'Business Affairs.'" </p>
+
+   <p>3. Talent Manager:
+	"A-list global film finance and production company looking for a highly-motivated and experienced manager for newly-established talent management division. Must have experience and interest in working with international clients. Having an existing client roster is a bonus. Position is based in Los Angeles. Please send resumes to jobsbmla@gmail.com with subject heading 'Talent Manager.”</p>
+
+   <p>4. Executive Assistant:
+	"Mick Artists Management (based in NY) is seeking an executive assistant. Email resumes to madison@mickmgmt.com" Responsibilities include:</p>
+ 	<ul>
+	   <li>Social media management and online activity.</li>
+	   <li>Administrative duties.</li> 
+	   <li>Independent research projects.</li> 
+	   <li>Promotional projects.</li>
+	   <li>Reporting on trends.</li>
+	   <li>Archive maintenance and ticket counting.</li>
+	</ul>
+
+
+   <p>5. Executive Assistant 2:
+	"Santa Monica based Film and Television Production Company is looking for a full-time executive assistant. Must have car and valid drivers license. This is an entry level job that will provide support to the administrative staff and run errands as needed. Please send cover letters and resumes to smprodcompany2018@gmail.com"</p>
+
+
+<p>Job listings courtesy of <a href="http://www.anonymousproductionassistant.com/uta-joblist/">Anonymous Production Assistant</a></p>
+
+
+<a href="#" onclick="openLinks();">Click Here for More Resources</a>
+<script>
+var linkArray = [
+"https://indeed.com", "https://entertainmentcareers.net", "https://craigslist.com", "https://deadline.com", "https://hollywoodreporter.com", "https://linkedin.com"
+];
+
+function openLinks() {
+var random = parseInt(Math.random() * linkArray.length);
+location.href = linkArray[random];
+}
+</script>
+
+<p>Click the top of the map for jobs in downtown LA, the right for Hollywood, and the bottom right for jobs in the San Fernando Valley!</p>
+
+<img src="http://funkyimg.com/i/2LYTT.jpg" width="400" height="350" alt="LA Map" usemap="#image-map">
+
+<map name="image-map">
+    <area shape="rect" coords="217,163,313,216" alt="Hollywood Jobs" href="https://www.hollywoodreporter.com/industry-jobs">
+    <area shape="rect" coords="118,80,225,128" alt="Downtown Jobs" href="https://www.artsforla.org/job_listings">
+    <area shape="rect" coords="257,178,300,325" alt="SF Valley Jobs" href="https://www.greenlightjobs.com/search?sk=entertainment&amp;loc_x=tarzana&amp;cmdbasicSearch=Search">
+</map>
+
+<p><a href="index.html">Back to homepage</a>
+
+</body>
+</html>

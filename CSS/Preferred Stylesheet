@@ -1,0 +1,11 @@
+h4 {
+	color: black;
+	font-family: courier;
+	font-size: 100%;
+}
+p {
+	color: black;
+	font-family: courier;
+	font-size: 100%;
+	
+}

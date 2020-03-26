@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+   <LINK href="preferred_style.css" title="Job Listings" rel="stylesheet" type="text/css">
+   <LINK href="alternate_style.css" title="Job Listings" rel="alternate stylesheet" type="text/css">
+   <LINK href="persist_style.css" rel="stylesheet" type="text/css">
+<title>"About Us"</title>
+
+
+
+
+<style>
+.topnav {
+   background-color: maroon;
+   overflow: hidden;
+}
+
+.topnav a {
+   float: left;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 30px;
+}
+
+.topnav a:hover {
+   background-color: white;
+   color: black;
+}
+
+.topnav a.active {
+   background-color: maroon;
+   color: white;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+<h1>
+<script type="text/JavaScript1.2">
+
+
+//Script from JavaScript Kit (http://javascriptkit.com)
+
+
+var about="About Us"
+var neonbasecolor="black"
+var neontextcolor="yellow"
+var flashspeed=100  //in milliseconds
+
+
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<about.length;m++)
+document.write('<span id="neonlight'+m+'">'+about.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(about)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<about.length;m++)
+//eval("document.all.neonlight"+m).style.color=neonbasecolor
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n<about.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script>
+</h1>
+</div>
+
+<div class="topnav">
+     <a href="index.html">Home</a>
+     <a href="about.html">About Us</a>
+     <a href="jobs.html">Jobs</a>
+     <a href="contact1.html">Contact Us</a>
+     <a href="roll.html">Time Job Hunting</a>
+     <a href="feedback.html">Feedback</a>
+ 
+</div>
+
+
+<h2>Welcome to the About page!</h2>
+
+<p>  
+Finding jobs in the entertainment industry can be quite a challenge! The industry is extremely competitive, and everyone is looking to find their next big break. It is true that having connections in the industry is the easiest way to get a job, even if you might not be as qualified for it. However, no need to worry! You still have the chance to find the job of your dreams! This site was started in order to help industry hopefuls (like you!) have an equal chance at getting your foot in the door! The administrators of this site will post jobs as often as possible, but we also need your help! If you or someone you know has a great job opportunity to post, please share it with us and our community. Together we will help each other land amazing jobs in this glamorous industry!</p>
+
+
+<script type="text/javascript">
+function rollover(imgChange) 
+{
+            imgChange.src = "https://image.ibb.co/bMj78A/Dream-Big.jpg";        
+}
+function mouseaway(imgChange) {
+	    imgChange.src = "https://www.determinedtolovemondays.com/wp-content/uploads/2017/03/list-800759_1920.jpg"
+}
+
+</script>
+<img src="https://www.determinedtolovemondays.com/wp-content/uploads/2017/03/list-800759_1920.jpg" onmouseover="rollover(this)" onmouseout="mouseaway(this)" alt="dreaming image" style=vertical-align:bottom; height="200" width="200">
+
+
+
+
+<script type="text/javascript">
+function roll(img2) 
+{
+            img2.src = "https://image.ibb.co/i1CuoA/goals.jpg";        
+}
+function away(img2) {
+	    img2.src = "https://www.geneautry.com/clubhouse/places/walk-of-fame/star-popup.jpg" 
+}
+
+</script>
+<img src="https://www.geneautry.com/clubhouse/places/walk-of-fame/star-popup.jpg" onmouseover="roll(this)" onmouseout="away(this)" alt="star" style=vertical-align:bottom; height="200" width="200">
+
+
+
+<script type="text/javascript">
+function rolling(img3) 
+{
+            img3.src = "https://image.ibb.co/ksOCaq/reach.jpg";        
+}
+function moaway(img3) {
+	    img3.src = "http://churchofchristarticles.com/blog/wp-content/uploads/2017/11/o-HOLLYWOOD-facebook.jpg" 
+}
+</script>
+
+<img src="http://churchofchristarticles.com/blog/wp-content/uploads/2017/11/o-HOLLYWOOD-facebook.jpg" onmouseover="rolling(this)" onmouseout="moaway(this)" alt="street sign" style=vertical-align:bottom; height="200" width="300">
+
+
+
+
+
+<h4>Click here for the newest <a href="jobs.html">job listings</a></h4>
+
+
+<h3>Our administrators:</h3>
+
+<table>
+    <colgroup>
+	<col span="3" style="background-color:yellow">
+    </colgroup>
+    <tr>
+	<th>Admin Name</th>
+	<th>Company</th>
+	<th>Contact</th>
+    </tr>
+    <tr>
+	<td>John Snow</td>
+	<td>Home Box Office, Inc.</td>
+	<td>john.snow@hbo.com</td>
+    </tr>
+    <tr>
+	<td>Sherlock Holmes</td>
+	<td>BBC America</td>
+	<td>sherlock@bbcamerica.com</td>
+    </tr>
+    <tr>
+	<td>Corine Toren</td>
+	<td>Creative Artists Agency</td>
+	<td>ctoren@caa.com</td>
+   </tr>
+</table>
+<a href="index.html">Back to homepage</a>
+
+</body>
+</html>
